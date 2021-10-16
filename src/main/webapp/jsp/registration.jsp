@@ -19,9 +19,9 @@
                 <input type="text" id="nickname" name="nickname" placeholder="username" autocomplete="off" />
                 <input type="password" id="password" name="password" placeholder="password" autocomplete="off" />
                 <button type="submit">&#xf0da;</button>
-                <p>already have an account? <a href="authorization.html">log in</a></p>
+                <p>already have an account? <a href="/signIn">log in</a></p>
                 <br>
-                <p>Для дебага <a href="main.html">main</a></p>
+                <p>Для дебага <a href="/main">main</a></p>
             </form>
         </div>
     </form>
