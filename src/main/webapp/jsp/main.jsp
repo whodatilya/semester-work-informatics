@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -22,6 +23,7 @@
   <a href="/signUp">Quit</a>
   <a href="/createNew">Create</a>
 </div>
+
 <figure class="baha1493">
   <div class="image"><img src="https://vip-1gl.ru/vipberrrt/2701Duplex-at-Beacon-Court-14.jpg" alt="ls-sample1" /></div>
   <figcaption>
@@ -69,6 +71,7 @@
   </figcaption>
   <a href="/advertisement"></a>
 </figure>
+
 
 </body>
 

@@ -1,5 +1,7 @@
 package servlets;
 
+import repositories.PostsRepository;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,8 +12,11 @@ import java.io.IOException;
 
 @WebServlet("/main")
 public class MainServlet extends HttpServlet {
+
+    PostsRepository postsRepository;
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
         String query = request.getParameter("query");
@@ -21,7 +26,6 @@ public class MainServlet extends HttpServlet {
 
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("jsp/main.jsp");
         requestDispatcher.forward(request, response);
-
     }
 
     @Override

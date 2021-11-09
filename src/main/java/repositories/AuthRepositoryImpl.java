@@ -8,7 +8,8 @@ import java.util.Optional;
 
 public class AuthRepositoryImpl implements AuthRepository{
 
-    private Connection connection;
+    private final Connection connection;
+
 
     public AuthRepositoryImpl(Connection connection) {
         this.connection = connection;
