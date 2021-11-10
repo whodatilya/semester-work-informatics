@@ -10,7 +10,7 @@ import lombok.*;
 @EqualsAndHashCode
 public class Comment {
     private int id;
-    private int postId;
-    private int userId;
+    Post post;
+    User user;
     private String text;
 }

@@ -10,7 +10,7 @@ import lombok.*;
 @EqualsAndHashCode
 public class Post  {
     private Long id;
-    private Long userId;
+    User user;
     private String article;
     private String description;
     private String phoneNumber;
